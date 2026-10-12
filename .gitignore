@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.env
+server/data/contact-submissions.json
+.DS_Store
