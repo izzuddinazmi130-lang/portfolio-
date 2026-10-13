@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import MenuOverlay from "./MenuOverlay.jsx";
 import { handleLinkClick } from "../navigate.js";
 
-const UPDATED = "6 October 2026";
+const UPDATED = "13 October 2026";
 const EMAIL = "izzuddinazmi130@gmail.com";
 
 const PAGES = {
@@ -34,7 +34,18 @@ const PAGES = {
       {
         h: "Where it goes",
         p: [
-          "Messages sent through the contact form travel to the site's server and are delivered to me, and may be kept there so I can answer. Like any website, the hosting provider keeps basic technical logs (for example IP address and time of visit) to keep the site running and secure.",
+          "Messages sent through the contact form are emailed straight to me, and the site itself doesn't keep a copy. Your IP address is used briefly to limit spam and isn't stored. Here is who handles what:",
+        ],
+        table: {
+          cols: ["Service", "What it does", "What it can see"],
+          rows: [
+            ["Resend", "Delivers your contact-form message to my inbox as an email.", "Your name, email address and message."],
+            ["Gmail (Google)", "Where I receive and read your message, and reply.", "Your name, email address and message."],
+            ["Vercel", "Hosts this website.", "Basic technical logs: IP address, time of visit and the page requested."],
+          ],
+        },
+        after: [
+          "Each of these services handles data under its own privacy policy, and their servers may be outside Malaysia. I don't sell or share your details with anyone else.",
         ],
       },
       {
@@ -200,6 +211,33 @@ export default function LegalPage({ kind }) {
                 {s.p.map((t) => (
                   <p key={t}>{t}</p>
                 ))}
+                {s.table && (
+                  <div className="lg-table-wrap">
+                    <table className="lg-table">
+                      <thead>
+                        <tr>
+                          {s.table.cols.map((c) => (
+                            <th key={c} scope="col">
+                              {c}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {s.table.rows.map((r) => (
+                          <tr key={r[0]}>
+                            {r.map((cell, ci) => (
+                              <td key={ci} data-label={s.table.cols[ci]}>
+                                {ci === 0 ? <b>{cell}</b> : cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {s.after && s.after.map((t) => <p key={t}>{t}</p>)}
               </div>
             </div>
           ))}
