@@ -94,7 +94,7 @@ export default function Systems({ preview = false }) {
                   </div>
                   {p.link && (
                     <a href={p.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                      Visit site ↗
+                      Visit site <svg className="ar-ne" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M4.5 11.5L11.5 4.5M5.5 4.5h6v6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
                     </a>
                   )}
                   {getProject(p.id) && (

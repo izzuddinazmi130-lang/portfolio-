@@ -15,7 +15,7 @@ export default function AlsoBuilt() {
           internship at MySoftcare Solution.
         </div>
         <div className="also-item">
-          <b>Security audit — eLesen Kemaman</b>Brute-force endpoint testing that surfaced multiple
+          <b>Security audit: eLesen Kemaman</b>Brute-force endpoint testing that surfaced multiple
           unsecured pages; delivered a breach report with fixes.
         </div>
         <div className="also-item">

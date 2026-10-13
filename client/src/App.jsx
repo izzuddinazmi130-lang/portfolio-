@@ -150,10 +150,6 @@ export default function App() {
             <b>Full-Stack Programmer / Web Developer</b>
           </div>
           <div className="stat-chip">
-            <span>Current Company</span>
-            <b>AS Tech Legacy Group</b>
-          </div>
-          <div className="stat-chip">
             <span>Team Size</span>
             <b>Sole Developer in Marketing Department</b>
           </div>

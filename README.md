@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Izzuddin Portfolio — React + Node/Express
 
 Same "blueprint" design as the single-file version, split into a proper
@@ -101,3 +102,7 @@ email instead of just being a mailto link, and (2) let you update your
 project list from anywhere without redeploying the frontend. Both are
 genuinely useful, and having a real Express API on your resume/portfolio
 is itself a small proof point for a fullstack role.
+=======
+# portfolio-
+My Portfolio
+>>>>>>> c36ca7aa9162cca9cfac0dd54a6b8e08af41be34

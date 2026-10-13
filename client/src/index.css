@@ -267,7 +267,7 @@ h1.name span{display:block;}
    the values down for smaller screens, they never drift continuously. */
 .stats-strip{
   width:min(100%,1100px);margin:0 auto 40px;
-  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;
   grid-auto-rows:1fr;
   position:relative;z-index:8;isolation:isolate;align-items:stretch;
 }
@@ -613,7 +613,6 @@ html.has-scroll-reveal #systems .reveal-item{
   .stat-chip{min-height:108px;padding:14px 16px;}
   .stat-chip span{font-size:12px;}
   .stat-chip b{font-size:14px;}
-  .stat-chip:last-child{grid-column:1 / -1;width:50%;justify-self:center;}
   .tile-grid{grid-template-columns:1fr;}
   .also-list{grid-template-columns:1fr;}
   .skills-wrap{grid-template-columns:1fr;}
@@ -1951,3 +1950,6 @@ a.brand-dark:focus-visible::after,.ab-brand:focus-visible::after,.cp-brand:focus
 .cp-link{display:block;}
 @media(max-width:900px){.cp-link{display:inline-block;}}
 a.brand-dark,.ab-brand,.cp-brand{width:fit-content;align-self:flex-start;justify-self:start;}
+.cp-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+
+.ar-ne{display:inline-block;width:.8em;height:.8em;margin-left:.2em;vertical-align:-.06em;flex:none;}

@@ -16,7 +16,7 @@ export const CAPS = [
   {
     tag: "end-to-end",
     title: "I own the whole stack",
-    body: "Database design, backend logic, frontend, and deployment — I don't hand off between stages, I carry a system from spec to production. I'm building three sites this way on my own: Kaftanasia, Alphard Chauffeur and AS Tech.",
+    body: "Database design, backend logic, frontend, and deployment. I don't hand off between stages, I carry a system from spec to production. I'm building three sites this way on my own: Kaftanasia, Alphard Chauffeur and AS Tech.",
     shots: [
       { slug: "kaftanasia", file: "homepage_kaftan.png", label: "Kaftanasia" },
       { slug: "alphard-chauffeur", file: "homepage_alphard.png", label: "Alphard Chauffeur" },
@@ -30,9 +30,9 @@ export const CAPS = [
     title: "I build the admin tools too",
     body: "Every site I ship comes with a panel so the team that owns it can update products, content, and bookings without needing me for every change. All three of my sites have an admin panel of their own.",
     shots: [
-      { slug: "kaftanasia", file: "admin_kaftan.png", label: "Kaftanasia — admin panel" },
-      { slug: "alphard-chauffeur", file: "admin_alphard.png", label: "Alphard Chauffeur — admin panel" },
-      { slug: "as-tech", file: "admin_astech.png", label: "AS Tech — admin panel" },
+      { slug: "kaftanasia", file: "admin_kaftan.png", label: "Kaftanasia: admin panel" },
+      { slug: "alphard-chauffeur", file: "admin_alphard.png", label: "Alphard Chauffeur: admin panel" },
+      { slug: "as-tech", file: "admin_astech.png", label: "AS Tech: admin panel" },
     ],
     href: "/projects",
     cta: "See all projects",
@@ -41,11 +41,11 @@ export const CAPS = [
     tag: "inherited code",
     title: "I'm comfortable fixing what I didn't build",
     body: "The clock-in and payroll system was written by past developers. I maintain it: I tracked down its recurring bugs and improved its working-hour rules, salary configuration and automated salary generation to match how the company actually works.",
-    footnote: { text: "One system, already in production — these are the parts I maintained and improved." },
+    footnote: { text: "One system, already in production. These are the parts I maintained and improved." },
     shots: [
-      { slug: "clockin-payroll", file: "admin_clockin.png", label: "Clock-in — admin panel", badge: "Maintained & improved" },
-      { slug: "clockin-payroll", file: "workhour_clockin.png", label: "Clock-in — working-hour rules", badge: "Maintained & improved" },
-      { slug: "clockin-payroll", file: "salaryconfig_clockin.png", label: "Clock-in — salary configuration", badge: "Maintained & improved" },
+      { slug: "clockin-payroll", file: "admin_clockin.png", label: "Clock-in: admin panel", badge: "Maintained & improved" },
+      { slug: "clockin-payroll", file: "workhour_clockin.png", label: "Clock-in: working-hour rules", badge: "Maintained & improved" },
+      { slug: "clockin-payroll", file: "salaryconfig_clockin.png", label: "Clock-in: salary configuration", badge: "Maintained & improved" },
     ],
     href: "/projects/clockin-payroll",
     cta: "See the project",
@@ -53,9 +53,9 @@ export const CAPS = [
   {
     tag: "security-minded",
     title: "I check for what's exposed",
-    body: "My endpoint testing on eLesen Kemaman found unsecured pages before they became a problem — I read code with an eye for what could break or be abused.",
+    body: "My endpoint testing on eLesen Kemaman found unsecured pages before they became a problem. I read code with an eye for what could break or be abused.",
     shots: [
-      { src: "/elesen/sample.png", file: "elesen-sample.png", label: "eLesen Kemaman — homepage" },
+      { src: "/elesen/sample.png", file: "elesen-sample.png", label: "eLesen Kemaman: homepage" },
     ],
     // The screenshot shows the site; the steps show what I actually did to it.
     flow: [
@@ -68,19 +68,19 @@ export const CAPS = [
 ];
 
 export const TIMELINE = [
-  { date: "Apr 2026 — Present", role: "Full-Stack Programmer, Marketing Department", org: "AS Tech Legacy Group — AS Tech / Kaftanasia / Alphard Chauffeur", img: "/experience/astech.jpeg", place: "AS Tech Legacy Group", desc: "Sole in-house programmer for three company brands. I built Kaftanasia (live), AS Tech and Alphard Chauffeur end to end, each with its own admin panel. I also maintain the clock-in and payroll system and mentor an intern." },
-  { date: "Sep — Dec 2025", role: "Customer Service Professional", org: "Telekom Malaysia — Budi Madani Contact Centre", secondary: true, img: "/experience/tm.jpeg", place: "Telekom Malaysia", desc: "Handled inbound calls and live chat for the Budi Madani RON95 subsidy programme, solving application, eligibility and login issues in the CRM while keeping my KPIs up under heavy volume." },
+  { date: "Apr 2026 to Present", role: "Full-Stack Programmer, Marketing Department", org: "AS Tech Legacy Group · AS Tech / Kaftanasia / Alphard Chauffeur", img: "/experience/astech.jpeg", place: "AS Tech Legacy Group", desc: "Sole in-house programmer for three company brands. I built Kaftanasia (live), AS Tech and Alphard Chauffeur end to end, each with its own admin panel. I also maintain the clock-in and payroll system and mentor an intern." },
+  { date: "Sep to Dec 2025", role: "Customer Service Professional", org: "Telekom Malaysia · Budi Madani Contact Centre", secondary: true, img: "/experience/tm.jpeg", place: "Telekom Malaysia", desc: "Handled inbound calls and live chat for the Budi Madani RON95 subsidy programme, solving application, eligibility and login issues in the CRM while keeping my KPIs up under heavy volume." },
   { date: "Aug 2025", role: "Graphic Designer", org: "WrapArt Studio Sdn. Bhd", secondary: true, img: "/experience/wrapart.jpeg", place: "WrapArt Studio", desc: "Designed car-wrap mockups and branding in Illustrator and Photoshop, and prepared print-ready, large-format artwork for clients while juggling several requests on tight deadlines." },
-  { date: "Sep 2024 — Jan 2025", role: "Intern Software Developer", org: "MySoftcare Solution — Laravel & Inertia.js", img: "/experience/mysoftcare.jpeg", place: "MySoftcare Solution", desc: "Built a full-stack project management app in Laravel and Inertia.js: dashboard, task assignment, role-based access, CRUD and database design. I also security-tested the eLesen Kemaman site and wrote a breach report." },
-  { date: "Mar — Sep 2022", role: "IT Support Technician", org: "Aidea Technology, Kuala Terengganu", img: "/experience/aidea.jpeg", place: "Aidea Technology", desc: "Fixed hardware and software problems on customers' laptops and printers, set up PCs, printers and CCTV on site, and handled upgrades like RAM, SSD and battery replacements." },
+  { date: "Sep 2024 to Jan 2025", role: "Intern Software Developer", org: "MySoftcare Solution · Laravel & Inertia.js", img: "/experience/mysoftcare.jpeg", place: "MySoftcare Solution", desc: "Built a full-stack project management app in Laravel and Inertia.js: dashboard, task assignment, role-based access, CRUD and database design. I also security-tested the eLesen Kemaman site and wrote a breach report." },
+  { date: "Mar to Sep 2022", role: "IT Support Technician", org: "Aidea Technology, Kuala Terengganu", img: "/experience/aidea.jpeg", place: "Aidea Technology", desc: "Fixed hardware and software problems on customers' laptops and printers, set up PCs, printers and CCTV on site, and handled upgrades like RAM, SSD and battery replacements." },
 ];
 
 export const LANGUAGES = ["PHP", "Laravel", "Inertia.js", "JavaScript", "React", "Node.js", "HTML", "CSS", "C++", "Java", "Python"];
 export const TOOLS = ["MySQL", "XAMPP", "Hostinger", "Git", "Visual Studio Code", "CRM systems", "Adobe Illustrator", "Adobe Photoshop"];
 
 export const EDUCATION = [
-  { date: "2022 — 2024", title: "Bachelor of Computer Science & Mathematics (Hons)", place: "UiTM" },
-  { date: "2020 — 2022", title: "Diploma in Computer Science", place: "UiTM" },
+  { date: "2022 to 2024", title: "Bachelor of Computer Science & Mathematics (Hons)", place: "UiTM" },
+  { date: "2020 to 2022", title: "Diploma in Computer Science", place: "UiTM" },
 ];
 
 // Homepage "My expertise" - text only: a title, a punchline and a short description.

@@ -191,7 +191,7 @@ function ProjectDetail({ project }) {
             <dd>
               {project.link ? (
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="pj-visit">
-                  Visit live site <span aria-hidden="true">↗</span>
+                  Visit live site <svg className="ar-ne" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M4.5 11.5L11.5 4.5M5.5 4.5h6v6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </a>
               ) : (
                 project.linkNote || "Not public yet"
@@ -264,7 +264,7 @@ function ProjectDetail({ project }) {
                     ) : (
                       <img
                         src={shot.src}
-                        alt={`${project.name} — ${shot.label}`}
+                        alt={`${project.name}: ${shot.label}`}
                         loading="lazy"
                         decoding="async"
                         onError={() => markFailed(shot.src)}
@@ -296,7 +296,7 @@ function ProjectDetail({ project }) {
         <div className="pj-next-shade"></div>
         <div className="pj-next-inner">
           <span className="pj-next-label">
-            Next project <i>—</i> 0{SHOWCASE.indexOf(next) + 1}
+            Next project <i>/</i> 0{SHOWCASE.indexOf(next) + 1}
           </span>
           <span className="pj-next-title">{next.name}</span>
           <span className="pj-next-arrow" aria-hidden="true">
