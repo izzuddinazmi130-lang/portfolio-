@@ -28,10 +28,10 @@ export default function Contact() {
             <a href="https://wa.me/60198158556" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
               <FaWhatsapp />
             </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="Add your GitHub URL">
+            <a href="https://github.com/izzuddinazmi130-lang" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Add your LinkedIn URL">
+            <a href="https://www.linkedin.com/in/muhammad-izzuddin-bin-azmi-9513ab2a0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
               <FaLinkedin />
             </a>
           </div>
