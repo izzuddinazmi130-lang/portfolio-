@@ -44,6 +44,7 @@ export default function Contact() {
         <a href="/cookies" onClick={(e) => handleLinkClick(e, "/cookies")}>Cookie policy</a>
         <a href="/privacy" onClick={(e) => handleLinkClick(e, "/privacy")}>Privacy policy</a>
       </div>
+      <p className="foot-copy">All Rights Reserved Muhammad Izzuddin C{new Date().getFullYear()} &copy;</p>
     </footer>
   );
 }
