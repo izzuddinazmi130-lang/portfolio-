@@ -1,108 +1,38 @@
-<<<<<<< HEAD
-# Izzuddin Portfolio — React + Node/Express
+# Muhammad Izzuddin | Portfolio
 
-Same "blueprint" design as the single-file version, split into a proper
-React frontend and a small Express backend with:
+Personal portfolio of **Muhammad Izzuddin Bin Azmi**, a full-stack programmer and web developer based in Kuala Terengganu, Malaysia.
 
-- **Working contact form** — submits to the backend, which emails you via
-  SMTP (Nodemailer) and also saves a local backup so nothing is lost.
-- **Projects API** — your "Systems I've built" section is served from
-  `server/data/projects.json` via a REST API, so you can add/edit/remove a
-  project without touching any frontend code.
+**Live site:** https://itsizz.vercel.app
 
-```
-portfolio-app/
-├── client/          React app (Vite)
-│   └── src/
-│       ├── components/   Hero, Systems, HowIWork, Experience, Skills, Contact
-│       ├── api.js        fetch helpers + fallback data
-│       └── App.jsx
-└── server/          Express API
-    ├── routes/          projects.js, contact.js
-    ├── middleware/       adminAuth.js (protects write endpoints)
-    └── data/             projects.json (your project data lives here)
-```
+[LinkedIn](https://www.linkedin.com/in/muhammad-izzuddin-bin-azmi-9513ab2a0/) · [GitHub](https://github.com/izzuddinazmi130-lang)
 
-## 1. Run it locally
+## About the site
 
-You'll need [Node.js](https://nodejs.org) 18+ installed. Open two terminals.
+A responsive portfolio that shows the systems I have built and the experience behind them. It is designed to work on every screen size, from small phones to large monitors.
 
-**Terminal 1 — backend**
-```bash
-cd server
-cp .env.example .env      # then edit .env, see step 2 below
-npm install
-npm run dev
-```
-This starts the API at `http://localhost:4000`.
+- **Home:** introduction, key facts and a preview of my work.
+- **About:** how I work, an animated experience timeline, tools and education.
+- **Projects:** a list of my projects, each with its own detail page.
+- **Contact:** a form that emails me directly, plus my other contact details.
+- **Privacy and cookie policy:** plain-language pages on how the site handles information.
 
-**Terminal 2 — frontend**
-```bash
-cd client
-npm install
-npm run dev
-```
-This starts the site at `http://localhost:5173`. Open that in your browser.
+## Projects shown
 
-If the backend isn't running yet, the site still works — it just falls
-back to the built-in project list and the contact form will show an error
-until the API is up.
+| Project | What it is |
+| --- | --- |
+| Kaftanasia | Live online store for a kaftan fashion label, with an admin panel. |
+| AS Tech | E-commerce platform for laptops, hardware and services, with an admin panel. |
+| Alphard Chauffeur | Booking system for a chauffeur service, with an admin panel. |
+| Clock-in and Payroll | Attendance and payroll system I took over, then maintained and improved. |
 
-## 2. Set up the contact form email
+## Built with
 
-The form works out of the box without email configured (submissions are
-still saved to `server/data/contact-submissions.json`), but to actually
-get emailed:
+- **Frontend:** React 18 and Vite, with plain CSS (no UI framework).
+- **Routing:** simple path-based routing handled in the app.
+- **Contact form:** a Vercel serverless function (`client/api/contact.js`) that sends each message to my inbox through [Resend](https://resend.com).
+- **Hosting:** [Vercel](https://vercel.com), deployed automatically from this repository.
 
-1. In `server/.env`, fill in `SMTP_USER` and `SMTP_PASS`.
-2. Easiest option: use a Gmail address with an **App Password** (not your
-   normal password) — turn on 2-Step Verification on the Google account,
-   then generate one at myaccount.google.com/apppasswords.
-3. Set `CONTACT_TO_EMAIL` to whichever inbox should receive messages
-   (can be the same Gmail address, or a different one).
+## Contact
 
-Any SMTP provider works the same way (Outlook, Zoho, a custom domain
-inbox, etc.) — just change `SMTP_HOST`/`SMTP_PORT` accordingly.
-
-## 3. Update your projects without touching code
-
-The project list lives in `server/data/projects.json` and is served at
-`GET /api/projects`. To add/update/delete one over the API (e.g. once
-AS Tech or Alphard Chauffeur goes live), set `ADMIN_TOKEN` in `.env` to
-something private, then call the API with that token, e.g.:
-
-```bash
-curl -X PUT http://localhost:4000/api/projects/as-tech \
-  -H "Content-Type: application/json" \
-  -H "x-admin-token: your-admin-token" \
-  -d '{"status":"live","statusLabel":"live — astech.com","link":"https://astech.com"}'
-```
-
-Or just edit `server/data/projects.json` directly and restart the server
-— either works.
-
-## 4. Deploying it for real
-
-- **Frontend**: run `npm run build` inside `client/`, which outputs static
-  files to `client/dist/`. Host that on Vercel, Netlify, GitHub Pages, or
-  Hostinger's static hosting.
-- **Backend**: needs an actual Node process running, so static hosting
-  won't work for it. Use Railway, Render, Fly.io (all have free tiers), or
-  Hostinger's Node.js hosting if your plan supports it.
-- Once both are deployed, set `VITE_API_URL` (in a `client/.env` file) to
-  your backend's live URL before running `npm run build`, and set
-  `CLIENT_ORIGIN` in the backend's `.env` to your frontend's live URL so
-  CORS allows it.
-
-## Why a backend at all?
-
-For a portfolio specifically, most of it doesn't need one — that's normal
-and fine. This one exists to (1) make the contact form actually deliver
-email instead of just being a mailto link, and (2) let you update your
-project list from anywhere without redeploying the frontend. Both are
-genuinely useful, and having a real Express API on your resume/portfolio
-is itself a small proof point for a fullstack role.
-=======
-# portfolio-
-My Portfolio
->>>>>>> c36ca7aa9162cca9cfac0dd54a6b8e08af41be34
+Open to full-stack programmer and web developer roles.
+Email: izzuddinazmi130@gmail.com
