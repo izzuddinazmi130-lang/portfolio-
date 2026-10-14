@@ -175,7 +175,7 @@ function ProjectDetail({ project }) {
           <span className={`pj-status ${project.status}`}>{project.statusLabel}</span>
         </div>
 
-        <h1 className="pj-title">{project.name}</h1>
+        <h1 className={`pj-title${project.name.length >= 20 ? " pj-title-long" : ""}`}>{project.name}</h1>
 
         <dl className="pj-meta">
           <div>

@@ -7,10 +7,6 @@ export default function AlsoBuilt() {
       <h4>also built</h4>
       <div className="also-list">
         <div className="also-item">
-          <b>Raya lucky-draw &amp; QR system</b>Generates unique QR codes for Kaftanasia's annual Raya
-          campaign, built for the marketing department.
-        </div>
-        <div className="also-item">
           <b>Project management app (Laravel)</b>Full-stack app with role-based access, built during my
           internship at MySoftcare Solution.
         </div>

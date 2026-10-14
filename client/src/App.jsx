@@ -156,7 +156,7 @@ export default function App() {
           <div className="stat-chip">
             <span>Systems shipped</span>
             <b>
-              <AnimatedNumber value={3} suffix=" live/built in 2026" />
+              <AnimatedNumber value={4} suffix=" live/built in 2026" />
             </b>
           </div>
           <div className="stat-chip">
