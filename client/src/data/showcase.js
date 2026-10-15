@@ -93,12 +93,12 @@ export const SHOWCASE = [
   },
   {
     slug: "raya-lucky-draw",
-    name: "Cabutan Bertuah Raya",
+    name: "Kaftanasia Raya Lucky Draw",
     status: "built",
     statusLabel: "built, pending launch",
     blurb: "A QR lucky draw for Kaftanasia's Raya campaign, with a spinning wheel built into the admin panel.",
     description:
-      "A lucky draw system for Kaftanasia's annual Raya campaign. Each customer gets a unique QR code, and scanning it opens their own customer page, which is the only part of the system they can see. The admin runs the draw from the admin panel using a spinning wheel that is built into the system itself, so no third party wheel is needed. The panel also handles QR codes and the draw settings. Built solo and finished, waiting to go live.",
+      "A lucky draw system (cabutan bertuah) for Kaftanasia's annual Raya campaign. Each customer gets a unique QR code, and scanning it opens their own customer page, which is the only part of the system they can see. The admin runs the draw from the admin panel using a spinning wheel that is built into the system itself, so no third party wheel is needed. The panel also handles QR codes and the draw settings. Built solo and finished, waiting to go live.",
     role: "Developer: system logic, backend and admin panel",
     category: ["Campaign system"],
     stack: ["HTML", "CSS", "JavaScript", "PHP"],
